@@ -40,3 +40,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+function showPopup(title, description) {
+    const popup = document.getElementById("popup");
+    const popupTitle = document.getElementById("popup-title");
+    const popupDescription = document.getElementById("popup-description");
+
+    popupTitle.textContent = title;
+    popupDescription.textContent = description;
+
+    popup.style.display = "block";
+}
+
+function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+}
+
